@@ -1,0 +1,153 @@
+
+/* @Contents Navigation Template */
+/* @Author shibata_ts */
+
+/*--// Html, Body ////////////////////////////////////////////////////--*/
+html, body {
+	text-align: center;
+	margin: auto;
+	height: 100%;
+	width: 98%;
+}
+
+/*--// Header ////////////////////////////////////////////////////////--*/
+header {
+	border-bottom: 1px solid #cccccc;
+	padding: 10px 0px;
+}
+
+/*--// Main //////////////////////////////////////////////////////////--*/
+main {
+	padding: 0px 20px;
+	height: 80%;
+}
+
+div.div_container {
+	height: 100%;
+}
+
+div.div_nav {
+	border-right: 1px solid #cccccc;
+	text-align: left;
+	height: 100%;
+}
+
+div.div_article {
+	text-align: left;
+	height: 100%;
+}
+
+div.div_article div {
+	font-size: 130%;
+}
+
+section {
+	display: none;
+}
+
+/*--// Footer ////////////////////////////////////////////////////////--*/
+footer {
+	border-top: 1px solid #cccccc;
+	padding-top: 10px;
+}
+
+/*--// Components ////////////////////////////////////////////////////--*/
+hr {
+	border: 1px solid #cccccc;
+}
+
+h2.h2_title {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+h3.h3_contents {
+	text-align: center;
+}
+
+h4.h4_title a {
+	position: relative;
+}
+
+nav.nav_focus h4 a {
+	color: orange;
+}
+
+div.div-width-max {
+	width: 100%;
+}
+
+div.div-center {
+	text-align: center;
+}
+
+div.div-left {
+	text-align: left;
+}
+
+div.div-right {
+	text-align: right;
+}
+
+/*--// Image /////////////////////////////////////////////////////////--*/
+img.img-normal {
+	width: 600px;
+	height: 400px;
+	margin: 15px 0px 10px 0px;
+	border: 1px solid #aaaaaa;
+}
+
+img.img-zoomable {
+	cursor: pointer;
+}
+
+/*--// Button ////////////////////////////////////////////////////////--*/
+button.btn-command {
+	position: absolute;
+	bottom: 0px;
+	margin: 15px;
+	width: 90px;
+}
+
+button#btn-prev {
+	left: 0px;
+}
+
+button#btn-next {
+	right: 0px;
+}
+
+button#btn-toggle-nav {
+	position: absolute;
+	top: 50px;
+	left: 30px;
+}
+
+/*--// Dialog ////////////////////////////////////////////////////////--*/
+div#div-dialog {
+	text-align: center;
+	background-color: #eeeeee;
+}
+
+div.ui-dialog-titlebar {
+	display: none;
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+	text-align: center;
+}
+
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+	float: none;
+}
+
+img#img-dialog {
+	margin-top: 30px;
+}
+
+button#btn-close-dialog {
+	width: 90px;
+}
+
+/*--//////////////////////////////////////////////////////////////////--*/
+
