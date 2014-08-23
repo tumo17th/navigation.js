@@ -120,7 +120,18 @@ button#btn-next {
 button#btn-toggle-nav {
 	position: absolute;
 	top: 50px;
-	left: 30px;
+	left: 40px;
+	width: 50px;
+}
+
+div.btn-group-language {
+	position: absolute;
+	top: 50px;
+	right: 40px;
+}
+
+div.btn-group-language button {
+	width: 50px;
 }
 
 /*--// Dialog ////////////////////////////////////////////////////////--*/

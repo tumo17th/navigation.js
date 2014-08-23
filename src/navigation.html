@@ -59,7 +59,12 @@
 				</div>
 			</section>
 		</div>
+		
 		<button id="btn-toggle-nav" class="btn btn-primary" title="Hide Navigation">&lt;&lt;</button>
+		<div class="btn-group btn-group-language">
+			<button type="button" class="btn btn-primary">EN</button>
+			<button type="button" class="btn btn-default">JP</button>
+		</div>
 		<div id="div-dialog"><img id="img-dialog"></div>
 	</div>
 </main>
@@ -82,31 +87,20 @@
 <script type="text/javascript" src="js/navigation.js"></script>
 <script type="text/javascript">
 <!--
-var imgDialog = $('div#div-dialog').dialog({
-	'autoOpen': false,
-	'modal': true,
-	'buttons' : [{
-		'id' : 'btn-close-dialog',
-		'class' : 'btn btn-primary',
-		'text' : 'Close',
-		'click' : function() {
-			$(this).dialog('close');
-		}
-	}]
-});
 
-$('img.img-zoomable').on('click', function() {
-	var img = $('img#img-dialog');
-	img.attr('src', $(this).attr('src'));
-	img.css({
-		'width': $(window).width() - 240,
-		'height' : $(window).height() - 240
+
+var $langButtons = $('div.btn-group-language button');
+$('div.btn-group-language button').on('click', function() {
+	var selectedVal = $(this).html();
+	$langButtons.each(function() {
+		if($(this).html() === selectedVal) {
+			$(this).addClass('btn-primary');
+			$(this).removeClass('btn-default').blur();
+		} else {
+			$(this).removeClass('btn-primary');
+			$(this).addClass('btn-default').blur();
+		}
 	});
-	imgDialog.dialog({
-		'width': $(window).width() - 160,
-		'height' : $(window).height() - 80
-	});
-	imgDialog.dialog('open');
 });
 -->
 </script>
