@@ -85,25 +85,6 @@
 <script type="text/javascript" src="lib/js/jquery-ui.min.js"></script>
 <script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/navigation.js"></script>
-<script type="text/javascript">
-<!--
-
-
-var $langButtons = $('div.btn-group-language button');
-$('div.btn-group-language button').on('click', function() {
-	var selectedVal = $(this).html();
-	$langButtons.each(function() {
-		if($(this).html() === selectedVal) {
-			$(this).addClass('btn-primary');
-			$(this).removeClass('btn-default').blur();
-		} else {
-			$(this).removeClass('btn-primary');
-			$(this).addClass('btn-default').blur();
-		}
-	});
-});
--->
-</script>
 <!--//////////////////////////////////////////////////////////////////-->
 </body>
 </html>

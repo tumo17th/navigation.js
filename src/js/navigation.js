@@ -86,6 +86,9 @@ $(function() {
 				Utils.adjustImgDialogSize(imgDialog);
 				imgDialog.dialog('open');
 			});
+			$('div.btn-group-language button').on('click', function() {
+				Utils.toggleLangButton($(this));
+			});
 		}
 		//////////////////////////////////////////////////////////////
 	};
@@ -156,6 +159,19 @@ $(function() {
 			imgDialog.dialog({
 				'width': $(window).width() - 160,
 				'height' : $(window).height() - 80
+			});
+		},
+		toggleLangButton : function($self) {
+			var selectedVal = $self.html();
+			$('div.btn-group-language button').each(function() {
+				if($(this).html() === selectedVal) {
+					$(this).addClass('btn-primary');
+					$(this).removeClass('btn-default');
+				} else {
+					$(this).removeClass('btn-primary');
+					$(this).addClass('btn-default');
+				}
+				$(this).blur();
 			});
 		}
 	};
