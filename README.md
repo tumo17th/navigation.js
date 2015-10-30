@@ -10,7 +10,7 @@ Navigation.js makes it easy to guide someone to a right way.
  (Google Chrome, Mozzila FireFox, Internet Explorer 9 and later)
 
 
-If you have any questions, please tell me.  
+If you have any questions, please contact me.  
 <tumo17th@gmail.com>
 
 
